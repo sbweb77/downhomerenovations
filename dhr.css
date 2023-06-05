@@ -1,0 +1,45 @@
+body {
+  font-family: "Arvo", serif;
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  text-align: center;
+}
+
+.logobg {
+  background-image: url(img/woodpanel.webp);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  height: 66vh;
+  padding: 2rem;
+}
+
+.logobg img {
+  max-width: 95vw;
+}
+
+.owner {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 3rem;
+}
+
+@media only screen and (min-width: 640px) {
+  .logobg {
+    background: url(img/s-tsuchiya-DKpkc0QQPzs-unsplash.jpg)
+      rgba(255, 255, 255, 0.925);
+    background-blend-mode: multiply;
+    background-size: cover;
+    display: flex;
+    justify-content: left;
+    height: 72vh;
+    padding: 0rem;
+    margin: 0;
+  }
+
+  .logobg img {
+    margin: 3rem;
+  }
+}
