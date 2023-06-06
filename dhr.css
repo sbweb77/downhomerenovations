@@ -94,10 +94,9 @@ body {
 
 @media only screen and (min-width: 640px) {
   .logobg {
-    background: url(img/s-tsuchiya-DKpkc0QQPzs-unsplash.jpg)
-      rgba(255, 255, 255, 0.925);
-    background-blend-mode: multiply;
+    background: url(img/zac-gudakov-NNHHpdE3uuQ-unsplash.jpg);
     background-size: cover;
+    background-position: bottom;
     display: flex;
     justify-content: left;
     height: 72vh;
@@ -106,7 +105,7 @@ body {
   }
 
   .logobg img {
-    margin: 3rem;
+    margin: 0rem;
   }
 
   .foooter {
