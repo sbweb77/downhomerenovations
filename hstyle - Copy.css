@@ -1,0 +1,376 @@
+:root {
+  --epblue: #04256d;
+  --mblue: #003057;
+  --rblue: #003da5;
+  --rblued: #1a3668;
+  --rbluem: #007dc3;
+  --rbluel: #a4d7f4;
+  --rred: #dc1c2e;
+  --rredd: #b22b2e;
+  --slate: #a4bcc2;
+  --charcoal: #282728;
+  --offwhite: #eeecec;
+  --white: #fff;
+
+  --lgbackground: linear-gradient(
+      135deg,
+      rgba(0, 48, 87, 0.2) 0%,
+      rgba(0, 48, 87, 0.2) 16.667%,
+      rgba(164, 188, 194, 0.2) 16.667%,
+      rgba(164, 188, 194, 0.2) 33.334%,
+      rgba(40, 39, 40, 0.2) 33.334%,
+      rgba(40, 39, 40, 0.2) 50.001%,
+      rgba(0, 48, 87, 0.2) 50.001%,
+      rgba(0, 48, 87, 0.2) 66.668%,
+      rgba(164, 188, 194, 0.2) 66.668%,
+      rgba(164, 188, 194, 0.2) 83.335%,
+      rgba(40, 39, 40, 0.2) 83.335%,
+      rgba(40, 39, 40, 0.2) 100.002%
+    ),
+    linear-gradient(
+      90deg,
+      rgba(0, 48, 87, 0.2) 0%,
+      rgba(0, 48, 87, 0.2) 16.667%,
+      rgba(164, 188, 194, 0.2) 16.667%,
+      rgba(164, 188, 194, 0.2) 33.334%,
+      rgba(40, 39, 40, 0.2) 33.334%,
+      rgba(40, 39, 40, 0.2) 50.001%,
+      rgba(0, 48, 87, 0.2) 50.001%,
+      rgba(0, 48, 87, 0.2) 66.668%,
+      rgba(164, 188, 194, 0.2) 66.668%,
+      rgba(164, 188, 194, 0.2) 83.335%,
+      rgba(40, 39, 40, 0.2) 83.335%,
+      rgba(40, 39, 40, 0.2) 100.002%
+    ),
+    linear-gradient(
+      45deg,
+      rgba(0, 48, 87, 0.2) 0%,
+      rgba(0, 48, 87, 0.2) 16.667%,
+      rgba(164, 188, 194, 0.2) 16.667%,
+      rgba(164, 188, 194, 0.2) 33.334%,
+      rgba(40, 39, 40, 0.2) 33.334%,
+      rgba(40, 39, 40, 0.2) 50.001%,
+      rgba(0, 48, 87, 0.2) 50.001%,
+      rgba(0, 48, 87, 0.2) 66.668%,
+      rgba(164, 188, 194, 0.2) 66.668%,
+      rgba(164, 188, 194, 0.2) 83.335%,
+      rgba(40, 39, 40, 0.2) 83.335%,
+      rgba(40, 39, 40, 0.2) 100.002%
+    ),
+    linear-gradient(90deg, #003057, #a4bcc2, #282728);
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+}
+
+.center {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.button {
+  border-radius: 1000px;
+  padding: 1.5rem 4rem;
+  margin-top: 25px;
+  font: normal bold 26px/1 "Open Sans", sans-serif;
+  border: 3px solid;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+}
+
+.b1 {
+  border-color: var(--white);
+  color: var(--white);
+}
+
+.b1:hover {
+  background: var(--white);
+  color: var(--epblue);
+}
+
+.b2 {
+  border-color: var(--rblued);
+  color: var(--rblued);
+}
+
+.b2:hover {
+  background: var(--rblued);
+  color: var(--white);
+}
+
+.b3 {
+  border-color: var(--rredd);
+  color: var(--rredd);
+}
+
+.b3:hover {
+  background: var(--rred);
+  color: var(--white);
+}
+
+.b4 {
+  border-color: var(--white);
+  color: var(--white);
+}
+
+.b4:hover {
+  background: var(--slate);
+  color: var(--mblue);
+}
+
+.b5 {
+  margin-top: 5px;
+  border-color: var(--white);
+  color: var(--white);
+}
+
+.b5:hover {
+  background: var(--rredd);
+  color: var(--charcoal);
+}
+
+#page {
+  display: grid;
+  width: 100%;
+  height: 250px;
+  grid-template-areas:
+    "htext htext htext"
+    "ep remax motto"
+    "community community community"
+    "mapg  contact mapw"
+    "footer  footer footer";
+  gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
+
+.realtor {
+  display: block;
+  height: 2rem;
+  width: auto;
+  padding: 1rem;
+  fill: white;
+}
+
+.headerimg {
+  width: 100% !important;
+  margin-bottom: 10px;
+}
+.headerimgb {
+  display: none;
+}
+
+#page > htext {
+  background-color: var(--offwhite);
+  color: var(--epblue);
+  grid-area: htext;
+  padding: 2%;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+#page > himg {
+  grid-area: himg;
+  padding: 10%;
+  background-position: center center;
+  background-size: cover;
+}
+
+#page > ep {
+  grid-area: ep;
+  background-color: var(--epblue);
+  color: var(--white);
+  padding: 10%;
+}
+
+#page > eg {
+  grid-area: eg;
+  background-color: var(--offwhite);
+  padding: 10%;
+}
+
+#page > remax {
+  grid-area: remax;
+  color: var(--white);
+  background-color: var(--rredd);
+  padding: 10%;
+}
+
+#page > motto {
+  grid-area: motto;
+  background-color: var(--mblue);
+  color: var(--white);
+  padding: 10%;
+}
+
+#page > mapg {
+  grid-area: mapg;
+  background-image: url(img/mapg.webp);
+  background-position: center center;
+  color: var(--white);
+  min-height: auto;
+  padding: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#page > mapg a {
+  color: var(--rredd);
+  font-weight: bold;
+  font-size: larger;
+}
+
+#page > mapw {
+  grid-area: mapw;
+  background-image: url(img/mapw.webp);
+  background-position: center center;
+  color: var(--white);
+  min-height: auto;
+  padding: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#page > mapw a {
+  color: var(--rredd);
+  font-weight: bold;
+  font-size: larger;
+}
+
+#page > contact {
+  grid-area: contact;
+  background-color: var(--rredd);
+  color: var(--white);
+  padding: 10%;
+  font-size: larger;
+}
+
+#page > contact a {
+  color: var(--white);
+}
+
+#page > community {
+  grid-area: community;
+  padding: 2%;
+  text-align: center;
+  /*background-color: var(--charcoal);*/
+  background: var(--lgbackground);
+}
+
+#page > community a {
+  color: var(--white);
+}
+
+#page > footer {
+  grid-area: footer;
+  padding: 2%;
+  text-align: center;
+}
+
+.polaroid-images {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.polaroid-images a {
+  background: var(--white);
+  display: inline;
+  margin: 0 15px 30px;
+  padding: 10px 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.polaroid-images .a1 {
+  float: left;
+  -webkit-transform: rotate(4deg);
+  -moz-transform: rotate(4deg);
+  transform: rotate(4deg);
+}
+
+.polaroid-images .a2 {
+  float: right;
+  -webkit-transform: rotate(-10deg);
+  -moz-transform: rotate(-10deg);
+  transform: rotate(-10deg);
+}
+
+.polaroid-images a:after {
+  color: var(--charcoal);
+  font-size: 20px;
+  content: attr(title);
+  position: relative;
+  top: 15px;
+}
+.polaroid-images img {
+  display: block;
+  width: inherit;
+}
+
+@media only screen and (max-width: 900px) {
+  header {
+    background-color: var(--epblue);
+  }
+
+  .headerimgb {
+    width: 95% !important;
+    margin-bottom: 5px;
+    display: block;
+  }
+  .headerimg {
+    display: none;
+  }
+
+  #page > himg {
+    display: none;
+  }
+
+  #page {
+    display: grid;
+    min-width: calc(min-content + 1em);
+    height: 250px;
+    grid-template-areas:
+      "htext"
+      "ep"
+      "remax"
+      "motto"
+      "community"
+      "mapg"
+      "contact"
+      "mapw"
+      "footer";
+    gap: 10px;
+    text-align: center;
+    grid-template-columns: 1fr;
+  }
+}

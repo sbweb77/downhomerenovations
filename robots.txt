@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /$
+Disallow: /
+Disallow: /img/
+Disallow: /cgi-bin/
+
+Sitemap: http://downhomerenovation.com/sitemap.xml

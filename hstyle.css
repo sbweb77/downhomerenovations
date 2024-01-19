@@ -1,0 +1,267 @@
+:root {
+  --red: #ea2026;
+  --slate: #a4bcc2;
+  --offwhite: #eeecec;
+  --dg: #3a3939;
+  --clear: rgba(0, 0, 0, 0);
+  --tranwhite: rgba(255, 255, 255, 0.4);
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+h1 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+h2 {
+  text-transform: uppercase;
+}
+
+h1,
+h2 {
+  margin: 2% 0 2% 0;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 66%;
+}
+
+#page {
+  display: grid;
+  width: 100%;
+  grid-template-areas:
+    "block1 block1 block1 bio"
+    "htext htext htext htext"
+    "interior exterior remodel decks"
+    "gallery gallery gallery gallery"
+    "footer  footer footer footer";
+  grid-template-columns: repeat(4, 1fr);
+}
+
+#page > block1 {
+  grid-area: block1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--dg);
+  background-image: url(img/projects/deck02.webp);
+  background-size: cover;
+  color: var(--offwhite);
+  padding: 10%;
+}
+
+#page > bio {
+  grid-area: bio;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--offwhite);
+  background-color: var(--red);
+  padding: 1%;
+}
+
+.button {
+  border-radius: 1000px;
+  padding: 20px;
+  margin: 25px auto 20px auto;
+  font: normal bold 26px/1 "Open Sans", sans-serif;
+  border: 3px solid;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  width: fit-content;
+  border-color: var(--offwhite);
+  color: var(--offwhite);
+}
+
+.button:hover {
+  background: var(--slate);
+  color: var(--red);
+}
+
+#page > htext {
+  background-color: var(--offwhite);
+  grid-area: htext;
+  padding: 2%;
+  font-size: 1.5rem;
+}
+
+#page > interior {
+  grid-area: interior;
+}
+
+#page > exterior {
+  grid-area: exterior;
+}
+
+#page > remodel {
+  grid-area: remodel;
+}
+
+#page > decks {
+  grid-area: decks;
+}
+
+#page > interior,
+#page > remodel,
+#page > exterior,
+#page > decks {
+  color: var(--offwhite);
+  padding: 10%;
+}
+
+#page > interior,
+#page > remodel {
+  background-color: var(--dg);
+}
+
+#page > exterior,
+#page > decks {
+  background-color: var(--red);
+}
+
+#page > gallery {
+  grid-area: gallery;
+  display: flex;
+  padding: 2%;
+  background: var(--offwhite);
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery-item {
+  display: flex;
+  align-content: space-around;
+  justify-content: space-around;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  padding: 5px;
+  margin: 5px;
+  background-image: linear-gradient(
+    170deg,
+    var(--dg) 0%,
+    var(--dg) 33%,
+    var(--red) 33%,
+    var(--red) 66%,
+    var(--dg) 66%
+  );
+}
+
+.nobg img {
+  background-image: none !important;
+}
+
+#page > footer {
+  grid-area: footer;
+  background-color: var(--dg);
+  color: var(--offwhite);
+  margin: 0;
+  padding: 1rem;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.footer div {
+  flex: auto;
+  margin: 0.5rem;
+}
+
+#social {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#social ul {
+  text-align: center;
+  padding-left: 0;
+}
+
+#social li {
+  display: inline-block;
+  list-style-type: none;
+  margin: 0 15px;
+}
+
+#social ul li {
+  transition: ease 0.3s;
+}
+
+#social ul:hover > li:not(:first-of-type) {
+  opacity: 0.5;
+}
+
+#social ul:hover > li:not(:first-of-type):hover {
+  opacity: 1;
+  transform: scale(1.5);
+}
+
+.socialicon {
+  width: 2rem;
+  height: 2rem;
+}
+
+@media only screen and (max-width: 1000px) {
+  #page {
+    display: grid;
+    min-width: calc(min-content + 1em);
+    grid-template-areas:
+      "block1 bio"
+      "htext htext"
+      "interior exterior"
+      "remodel decks"
+      "gallery gallery"
+      "footer footer";
+    gap: 10px;
+    text-align: center;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #page > block1 {
+    background-image: linear-gradient(var(--tranwhite), var(--tranwhite)),
+      url(img/projects/deck02.webp);
+  }
+
+  #page > footer {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  #page {
+    display: grid;
+    min-width: calc(min-content + 1em);
+    height: 250px;
+    grid-template-areas:
+      "block1"
+      "bio"
+      "htext"
+      "interior"
+      "exterior"
+      "remodel"
+      "decks"
+      "gallery"
+      "footer";
+    gap: 10px;
+    text-align: center;
+    grid-template-columns: 1fr;
+  }
+}
