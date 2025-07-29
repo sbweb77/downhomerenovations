@@ -1,63 +1,10 @@
 :root {
-  --epblue: #04256d;
-  --mblue: #003057;
-  --rblue: #003da5;
-  --rblued: #1a3668;
-  --rbluem: #007dc3;
-  --rbluel: #a4d7f4;
-  --rred: #dc1c2e;
-  --rredd: #b22b2e;
+  --red: #ea2026;
   --slate: #a4bcc2;
-  --charcoal: #282728;
   --offwhite: #eeecec;
-  --white: #fff;
-
-  --lgbackground: linear-gradient(
-      135deg,
-      rgba(0, 48, 87, 0.2) 0%,
-      rgba(0, 48, 87, 0.2) 16.667%,
-      rgba(164, 188, 194, 0.2) 16.667%,
-      rgba(164, 188, 194, 0.2) 33.334%,
-      rgba(40, 39, 40, 0.2) 33.334%,
-      rgba(40, 39, 40, 0.2) 50.001%,
-      rgba(0, 48, 87, 0.2) 50.001%,
-      rgba(0, 48, 87, 0.2) 66.668%,
-      rgba(164, 188, 194, 0.2) 66.668%,
-      rgba(164, 188, 194, 0.2) 83.335%,
-      rgba(40, 39, 40, 0.2) 83.335%,
-      rgba(40, 39, 40, 0.2) 100.002%
-    ),
-    linear-gradient(
-      90deg,
-      rgba(0, 48, 87, 0.2) 0%,
-      rgba(0, 48, 87, 0.2) 16.667%,
-      rgba(164, 188, 194, 0.2) 16.667%,
-      rgba(164, 188, 194, 0.2) 33.334%,
-      rgba(40, 39, 40, 0.2) 33.334%,
-      rgba(40, 39, 40, 0.2) 50.001%,
-      rgba(0, 48, 87, 0.2) 50.001%,
-      rgba(0, 48, 87, 0.2) 66.668%,
-      rgba(164, 188, 194, 0.2) 66.668%,
-      rgba(164, 188, 194, 0.2) 83.335%,
-      rgba(40, 39, 40, 0.2) 83.335%,
-      rgba(40, 39, 40, 0.2) 100.002%
-    ),
-    linear-gradient(
-      45deg,
-      rgba(0, 48, 87, 0.2) 0%,
-      rgba(0, 48, 87, 0.2) 16.667%,
-      rgba(164, 188, 194, 0.2) 16.667%,
-      rgba(164, 188, 194, 0.2) 33.334%,
-      rgba(40, 39, 40, 0.2) 33.334%,
-      rgba(40, 39, 40, 0.2) 50.001%,
-      rgba(0, 48, 87, 0.2) 50.001%,
-      rgba(0, 48, 87, 0.2) 66.668%,
-      rgba(164, 188, 194, 0.2) 66.668%,
-      rgba(164, 188, 194, 0.2) 83.335%,
-      rgba(40, 39, 40, 0.2) 83.335%,
-      rgba(40, 39, 40, 0.2) 100.002%
-    ),
-    linear-gradient(90deg, #003057, #a4bcc2, #282728);
+  --dg: #3a3939;
+  --clear: rgba(0, 0, 0, 0);
+  --tranwhite: rgba(255, 255, 255, 0.4);
 }
 
 body {
@@ -66,308 +13,277 @@ body {
   margin: 0;
 }
 h1 {
-  font-size: 2rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
 }
 
 h2 {
   text-transform: uppercase;
 }
 
+h1,
+h2 {
+  margin: 2% 0 2% 0;
+  text-align: center;
+}
+
 a {
   text-decoration: none;
-}
-
-.center {
-  text-align: center;
-  font-size: 1.5rem;
-}
-
-.button {
-  border-radius: 1000px;
-  padding: 1.5rem 4rem;
-  margin-top: 25px;
-  font: normal bold 26px/1 "Open Sans", sans-serif;
-  border: 3px solid;
-  text-align: center;
-  text-decoration: none;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: fit-content;
-}
-
-.b1 {
-  border-color: var(--white);
-  color: var(--white);
-}
-
-.b1:hover {
-  background: var(--white);
-  color: var(--epblue);
-}
-
-.b2 {
-  border-color: var(--rblued);
-  color: var(--rblued);
-}
-
-.b2:hover {
-  background: var(--rblued);
-  color: var(--white);
-}
-
-.b3 {
-  border-color: var(--rredd);
-  color: var(--rredd);
-}
-
-.b3:hover {
-  background: var(--rred);
-  color: var(--white);
-}
-
-.b4 {
-  border-color: var(--white);
-  color: var(--white);
-}
-
-.b4:hover {
-  background: var(--slate);
-  color: var(--mblue);
-}
-
-.b5 {
-  margin-top: 5px;
-  border-color: var(--white);
-  color: var(--white);
-}
-
-.b5:hover {
-  background: var(--rredd);
-  color: var(--charcoal);
-}
-
-#page {
-  display: grid;
-  width: 100%;
-  height: 250px;
-  grid-template-areas:
-    "htext htext htext"
-    "ep remax motto"
-    "community community community"
-    "mapg  contact mapw"
-    "footer  footer footer";
-  gap: 10px;
-  grid-template-columns: repeat(3, 1fr);
 }
 
 img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 75%;
+  width: 66%;
 }
 
-.realtor {
+#page {
+  display: grid;
+  width: 100%;
+  grid-template-areas:
+    "block1 block1 block1 bio"
+    "htext htext htext htext"
+    "interior exterior remodel decks"
+    "gallery gallery gallery gallery"
+    "footer  footer footer footer";
+  grid-template-columns: repeat(4, 1fr);
+}
+
+#page > block1 {
+  grid-area: block1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--dg);
+  background-image: url(img/projects/deck02.webp);
+  background-size: cover;
+  color: var(--offwhite);
+  padding: 10%;
+}
+
+#page > bio {
+  grid-area: bio;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--offwhite);
+  background-color: var(--red);
+  padding: 1%;
+}
+
+.button {
+  border-radius: 1000px;
+  padding: 20px;
+  margin: 25px auto 20px auto;
+  font: normal bold 26px/1 "Open Sans", sans-serif;
+  border: 3px solid;
+  text-align: center;
+  text-decoration: none;
   display: block;
-  height: 2rem;
-  width: auto;
-  padding: 1rem;
-  fill: white;
+  width: fit-content;
+  border-color: var(--offwhite);
+  color: var(--offwhite);
 }
 
-.headerimg {
-  width: 100% !important;
-  margin-bottom: 10px;
-}
-.headerimgb {
-  display: none;
+.button:hover {
+  background: var(--slate);
+  color: var(--red);
 }
 
 #page > htext {
   background-color: var(--offwhite);
-  color: var(--epblue);
   grid-area: htext;
   padding: 2%;
   font-size: 1.5rem;
-  text-align: center;
 }
 
-#page > himg {
-  grid-area: himg;
-  padding: 10%;
-  background-position: center center;
-  background-size: cover;
+#page > interior {
+  grid-area: interior;
 }
 
-#page > ep {
-  grid-area: ep;
-  background-color: var(--epblue);
-  color: var(--white);
-  padding: 10%;
+#page > exterior {
+  grid-area: exterior;
 }
 
-#page > eg {
-  grid-area: eg;
-  background-color: var(--offwhite);
-  padding: 10%;
+#page > remodel {
+  grid-area: remodel;
 }
 
-#page > remax {
-  grid-area: remax;
-  color: var(--white);
-  background-color: var(--rredd);
+#page > decks {
+  grid-area: decks;
+}
+
+#page > interior,
+#page > remodel,
+#page > exterior,
+#page > decks {
+  color: var(--offwhite);
   padding: 10%;
 }
 
-#page > motto {
-  grid-area: motto;
-  background-color: var(--mblue);
-  color: var(--white);
-  padding: 10%;
+#page > interior,
+#page > remodel {
+  background-color: var(--dg);
 }
 
-#page > mapg {
-  grid-area: mapg;
-  background-image: url(img/mapg.webp);
-  background-position: center center;
-  color: var(--white);
-  min-height: auto;
-  padding: 10%;
+#page > exterior,
+#page > decks {
+  background-color: var(--red);
+}
+
+
+/*
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+*/
+
+
+
+
+#page > gallery {
+  grid-area: gallery;
   display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#page > mapg a {
-  color: var(--rredd);
-  font-weight: bold;
-  font-size: larger;
-}
-
-#page > mapw {
-  grid-area: mapw;
-  background-image: url(img/mapw.webp);
-  background-position: center center;
-  color: var(--white);
-  min-height: auto;
-  padding: 10%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#page > mapw a {
-  color: var(--rredd);
-  font-weight: bold;
-  font-size: larger;
-}
-
-#page > contact {
-  grid-area: contact;
-  background-color: var(--rredd);
-  color: var(--white);
-  padding: 10%;
-  font-size: larger;
-}
-
-#page > contact a {
-  color: var(--white);
-}
-
-#page > community {
-  grid-area: community;
   padding: 2%;
-  text-align: center;
-  /*background-color: var(--charcoal);*/
-  background: var(--lgbackground);
+  background: var(--offwhite);
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
-#page > community a {
-  color: var(--white);
+.gallery-item {
+  display: flex;
+  align-content: space-around;
+  justify-content: space-around;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  padding: 5px;
+  margin: 5px;
+  background-image: linear-gradient(
+    170deg,
+    var(--dg) 0%,
+    var(--dg) 33%,
+    var(--red) 33%,
+    var(--red) 66%,
+    var(--dg) 66%
+  );
+}
+
+.nobg img {
+  background-image: none !important;
 }
 
 #page > footer {
   grid-area: footer;
-  padding: 2%;
+  background-color: var(--dg);
+  color: var(--offwhite);
+  margin: 0;
+  padding: 1rem;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.footer div {
+  flex: auto;
+  margin: 0.5rem;
+}
+
+#social {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#social ul {
   text-align: center;
+  padding-left: 0;
 }
 
-.polaroid-images {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+#social li {
+  display: inline-block;
+  list-style-type: none;
+  margin: 0 15px;
 }
 
-.polaroid-images a {
-  background: var(--white);
-  display: inline;
-  margin: 0 15px 30px;
-  padding: 10px 10px 25px;
-  text-align: center;
-  text-decoration: none;
-  -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+#social ul li {
+  transition: ease 0.3s;
 }
 
-.polaroid-images .a1 {
-  float: left;
-  -webkit-transform: rotate(4deg);
-  -moz-transform: rotate(4deg);
-  transform: rotate(4deg);
+#social ul:hover > li:not(:first-of-type) {
+  opacity: 0.5;
 }
 
-.polaroid-images .a2 {
-  float: right;
-  -webkit-transform: rotate(-10deg);
-  -moz-transform: rotate(-10deg);
-  transform: rotate(-10deg);
+#social ul:hover > li:not(:first-of-type):hover {
+  opacity: 1;
+  transform: scale(1.5);
 }
 
-.polaroid-images a:after {
-  color: var(--charcoal);
-  font-size: 20px;
-  content: attr(title);
-  position: relative;
-  top: 15px;
-}
-.polaroid-images img {
-  display: block;
-  width: inherit;
+.socialicon {
+  width: 2rem;
+  height: 2rem;
 }
 
-@media only screen and (max-width: 900px) {
-  header {
-    background-color: var(--epblue);
+@media only screen and (max-width: 1000px) {
+  #page {
+    display: grid;
+    min-width: calc(min-content + 1em);
+    grid-template-areas:
+      "block1 bio"
+      "htext htext"
+      "interior exterior"
+      "remodel decks"
+      "gallery gallery"
+      "footer footer";
+    gap: 10px;
+    text-align: center;
+    grid-template-columns: repeat(2, 1fr);
   }
 
-  .headerimgb {
-    width: 95% !important;
-    margin-bottom: 5px;
-    display: block;
-  }
-  .headerimg {
-    display: none;
+  #page > block1 {
+    background-image: linear-gradient(var(--tranwhite), var(--tranwhite)),
+      url(img/projects/deck02.webp);
   }
 
-  #page > himg {
-    display: none;
+  #page > footer {
+    flex-direction: column;
   }
+}
 
+@media only screen and (max-width: 700px) {
   #page {
     display: grid;
     min-width: calc(min-content + 1em);
     height: 250px;
     grid-template-areas:
+      "block1"
+      "bio"
       "htext"
-      "ep"
-      "remax"
-      "motto"
-      "community"
-      "mapg"
-      "contact"
-      "mapw"
+      "interior"
+      "exterior"
+      "remodel"
+      "decks"
+      "gallery"
       "footer";
     gap: 10px;
     text-align: center;

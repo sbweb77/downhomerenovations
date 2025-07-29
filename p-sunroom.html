@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <head>
+    <title>Down Home Renovations LLC.</title>
+    <meta
+      name="description"
+      content="Your Renovation Specialist"
+    />
+    <meta name="robots" content="all" />
+        <link rel="stylesheet" type="text/css" href="gallery.css" />
+    <link rel="shortcut icon" href="img/favicon.svg" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+  <header>
+    <div class="container">
+      <img src="img/projectlogo.svg" alt="Logo" class="logo" />
+      <h1 class="title">Projects: Sun Room</h1>
+    </div>
+  </header>
+
+
+  <div class="carousel-container">
+    <div class="main-image" id="main-image">
+      <img src="img/projects/sunroom/IMG959886.JPG" alt="Main View">
+    </div>
+    <div class="thumbnails">
+      <img src="img/projects/sunroom/IMG959886-thumb.JPG" alt="Thumb 4" onclick="showImage('img/projects/sunroom/IMG959886.JPG')">
+      <img src="img/projects/sunroom/IMG_2347-thumb.jpg" alt="Thumb 1" onclick="showImage('img/projects/sunroom/IMG_2347.jpg')">
+      <img src="img/projects/sunroom/IMG_2352-thumb.jpg" alt="Thumb 2" onclick="showImage('img/projects/sunroom/IMG_2352.jpg')">
+      <img src="img/projects/sunroom/IMG_2353-thumb.jpg" alt="Thumb 3" onclick="showImage('img/projects/sunroom/IMG_2353.jpg')">
+      <img src="img/projects/sunroom/IMG_2356-thumb.jpg" alt="Thumb 4" onclick="showImage('img/projects/sunroom/IMG_2356.jpg')">
+      <img src="img/projects/sunroom/IMG_2360-thumb.jpg" alt="Thumb 4" onclick="showImage('img/projects/sunroom/IMG_2360.jpg')">
+      <img src="img/projects/sunroom/IMG_2362-thumb.jpg" alt="Thumb 4" onclick="showImage('img/projects/sunroom/IMG_2362.jpg')">
+      <img src="img/projects/sunroom/IMG_2372-thumb.jpg" alt="Thumb 4" onclick="showImage('img/projects/sunroom/IMG_2372.jpg')">
+      <img src="img/projects/sunroom/IMG_2378-thumb.jpg" alt="Thumb 4" onclick="showImage('img/projects/sunroom/IMG_2378.jpg')">
+      <img src="img/projects/sunroom/IMG_2379-thumb.jpg" alt="Thumb 4" onclick="showImage('img/projects/sunroom/IMG_2379.jpg')">
+      <img src="img/projects/sunroom/IMG_2380-thumb.jpg" alt="Thumb 4" onclick="showImage('img/projects/sunroom/IMG_2380.jpg')">
+      <img src="img/projects/sunroom/IMG_2395-thumb.jpg" alt="Thumb 4" onclick="showImage('img/projects/sunroom/IMG_2395.jpg')">
+      <img src="img/projects/sunroom/IMG_2396-thumb.jpg" alt="Thumb 4" onclick="showImage('img/projects/sunroom/IMG_2396.jpg')">
+      <img src="img/projects/sunroom/IMG_9881-thumb.JPEG" alt="Thumb 4" onclick="showImage('img/projects/sunroom/IMG_9881.JPEG')">
+      <img src="img/projects/sunroom/IMG_9882-thumb.JPEG" alt="Thumb 4" onclick="showImage('img/projects/sunroom/IMG_9882.JPEG')">
+
+    </div>
+  </div>
+
+  <script>
+    function showImage(src) {
+      document.getElementById("main-image").querySelector("img").src = src;
+    }
+  </script>
+
+<menu>
+  <a href="index.html"><button class="button">Back to Homepage</button></a>
+</menu>
+
+
+      <footer>
+        <div>
+          <p>&copy; <script>document.write( new Date().getFullYear() );</script>  Down Home Renovations LLC.</p>
+          </div>
+           <div id="social">
+                 <ul>
+                  <li><h1>Contact Us</h1></li>
+                  <li>&nbsp;</li>
+                   <li class="email">
+                     <a aria-label="Email link" href="mailto:john@downhomerenovation.com">
+                       <img class="socialicon" src="img/email.svg" alt="Email link"></img></a>
+                   </li>
+                   <li class="call">
+                     <a aria-label="Telephone link" href="tel:9197388710">
+                       <img class="socialicon" src="img/phone.svg" alt="Phone link"></img></a>
+                   </li>
+                   <li class="call">
+                      <a aria-label="Facebook link" href="https://www.facebook.com/downhomerenovationsnc">
+                        <img class="socialicon" src="img/facebookfill.svg" alt="Facebook link"></img></a>
+                    </li>
+                 </ul>
+               </div>
+      </footer>
+    </section>
+  </body>
+</html>
